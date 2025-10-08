@@ -25,6 +25,12 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - Commitar e empurrar o arquivo `.nvmrc` com `git add`, `git commit` e `git push`
 - Commitar e empurrar os arquivos `.package.json` e `package-lock.json` com `git add`, `git commit` e `git push`
 - Commitar e empurrar o diretório `app` com `git add`, `git commit` e `git push`
+- Criar o arquivo `.editorconfig`, o vscode não interpreta esse arquivo automaticamente então vamos usar a extensão `EditorConfig for VSCode`
+- Commitar e empurrar o arquivo `.editorconfig` com `git add`, `git commit` e `git push`
+- Instalar o `Prettier` com `npm install prettier -D` e Configurar
+- Criar o script `"lint:check": "prettier --check ."`
+- Criar o script `"lint:fix": "prettier --write ."`
+- Instalar a extensão `Prettier - Code formatter`
 
 ## Comandos úteis
 
