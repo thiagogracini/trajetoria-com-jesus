@@ -32,6 +32,7 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - Criar o script `"lint:fix": "prettier --write ."`
 - Instalar a extensão `Prettier - Code formatter`
 - Instalar e configurar o `tailwindcss` e o `@tailwindcss/postcss`
+- Criar arquivo `jsconfig.json`
 
 ## Comandos úteis
 
