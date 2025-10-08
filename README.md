@@ -31,9 +31,11 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - Criar o script `"lint:check": "prettier --check ."`
 - Criar o script `"lint:fix": "prettier --write ."`
 - Instalar a extensão `Prettier - Code formatter`
-- Instalar e configurar o `tailwindcss` e o `@tailwindcss/postcss`
+- Instalar e configurar o `tailwindcss` e o `@tailwindcss/postcss` ambos devem ser instalados como DEV dependency.
 - Criar arquivo `jsconfig.json`
 - Instalar o `tailwind-merge`
+- Instalar o `jest` com DEV dependency
+- Criar os scripts `"test": "jest"` e `"test:watch": "jest --watch"`
 
 ## Comandos úteis
 
