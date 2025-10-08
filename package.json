@@ -4,7 +4,9 @@
   "description": "Newsletter Trajetória com Jesus",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
     "next": "^15.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
