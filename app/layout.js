@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Trajetória com Jesus",
   description: "Newsletter Trajetória com Jesus",
