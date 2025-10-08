@@ -33,6 +33,7 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - Instalar a extensão `Prettier - Code formatter`
 - Instalar e configurar o `tailwindcss` e o `@tailwindcss/postcss`
 - Criar arquivo `jsconfig.json`
+- Instalar o `tailwind-merge`
 
 ## Comandos úteis
 
