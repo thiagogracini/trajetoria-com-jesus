@@ -1,1 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-alegreya: "Alegreya", serif;
+  --font-redhatdisplay: "Red Hat Display", sans-serif;
+  --spacing: 0.0625rem;
+
+  /* Media Queries */
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 640px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+}
+
+.max-newsletter-w-grid {
+  @apply max-w-[40.25rem];
+}
+
+body {
+  @apply font-alegreya;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-redhatdisplay;
+}

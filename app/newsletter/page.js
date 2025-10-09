@@ -1,5 +1,11 @@
+import { Hero } from "@components/lp-newsletter/hero.js";
+
 function Newsletter() {
-  return <h1>Newsletter em construção =)</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default Newsletter;
