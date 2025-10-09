@@ -36,6 +36,7 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - Instalar o `tailwind-merge`
 - Instalar o `jest` com DEV dependency
 - Criar os scripts `"test": "jest --runInBand"` e `"test:watch": "jest --watchAll --runInBand"`
+- Criar o arquivo `.env.development`
 - Instalar o `dotenv`
 
 ## Comandos úteis
