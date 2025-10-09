@@ -54,7 +54,20 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - `git branch`: Exibe a branch que estamos trabalhando
 - `git push`: Empurra as alterações para o repositório remoto.
 - `git push -f`: Empurra com "força" sobreescrevendo o diretório remoto. **NÃO RECOMENDADO**
-- `git mv old_file_name new_file_name` renomeia um arquivo, esse é o jeito correto de renomear um arquivo que já foi commitado.
+- `git mv old_file_name new_file_name`: renomeia um arquivo, esse é o jeito correto de renomear um arquivo que já foi commitado.
+- `git branch`: Exibe as branches
+- `git branch nova-branch` ou `git switch nova-branch`: cria uma nova branch com o nome "nova-branch"
+- `git checkout nome-da-branch`: altera a branch de trabalho para a branch informada.
+- `git rm nome-do-arquivo`: remove um arquivo que já foi commitado anteriormente.
+- `git checkout primeiros-4-caracteres-do-commit`: vai para o commit especificado.
+- `git checkout -b nova-branch`: cria a nova branch e já altera o ponteiro HEAD para ela.
+- `git push --set-upstream origin nova-branch`: envia a branch local para o remoto e configura o tracking para que git push e git pull funcionem sem precisar repetir origin nome-da-branch. Esse comando serve para quando queremos fazer o commit de uma branch que não é a main e que será feito o merge no futuro.
+- `git branch -d nome-da-branch`: Deleta uma branch
+- `git branch -D nome-da-branch`: Força a remoção da branch, mesmo que ainda não tenha sido realizado o merge.
+- `git reflog`: Exibe os logs de tudo que ocorreu no git.
+- `git checkout -b nome-da-branch b54aeb9`: Cria uma branch apontando para um commit em específico.
+- `git merge nome-da-branch`: Estando na branch main, esse comando mescla o conteúdo da branch `nome-da-branch` com a branch main. Em resumo a branch main passará a ter tudo que que existe na branch `nome-da-branch`
+- `git log --graph`: Mostra o histórico de commits em formato de árvore gráfica, exibindo visualmente os ramos e merges do repositório.
 
 ## Boas Práticas
 
