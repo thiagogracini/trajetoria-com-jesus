@@ -35,7 +35,8 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - Criar arquivo `jsconfig.json`
 - Instalar o `tailwind-merge`
 - Instalar o `jest` com DEV dependency
-- Criar os scripts `"test": "jest"` e `"test:watch": "jest --watch"`
+- Criar os scripts `"test": "jest --runInBand"` e `"test:watch": "jest --watchAll --runInBand"`
+- Instalar o `dotenv`
 
 ## Comandos úteis
 
@@ -52,6 +53,7 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
 - `git branch`: Exibe a branch que estamos trabalhando
 - `git push`: Empurra as alterações para o repositório remoto.
 - `git push -f`: Empurra com "força" sobreescrevendo o diretório remoto. **NÃO RECOMENDADO**
+- `git mv old_file_name new_file_name` renomeia um arquivo, esse é o jeito correto de renomear um arquivo que já foi commitado.
 
 ## Boas Práticas
 
@@ -59,3 +61,5 @@ Aqui vou descrever todos os passos necessários para construir a fundação do p
   - git status
   - git add
   - git commit -m 'mensagem curta e objetiva'
+- Para realizar a Fuzzy Search no vscode pressionar `Ctrl + P` e pesquisar.
+  - Por exemplo `pk@scr` irá abrir o `package.json` já na seção `scripts`

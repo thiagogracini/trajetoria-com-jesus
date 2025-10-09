@@ -7,8 +7,8 @@
     "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --runInBand",
+    "test:watch": "jest --watchAll --runInBand"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/thiagogracini/trajetoria-com-jesus#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "next": "^15.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
