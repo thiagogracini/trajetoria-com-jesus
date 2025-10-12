@@ -46,70 +46,76 @@ export default function SubscribeForm() {
   };
 
   return (
-    <form
-      onSubmit={onSubmit}
-      className="max-w-620 text-bold font-redhatdisplay text-[25px]"
-    >
-      <div>
-        <input
-          id="firstName"
-          name="firstName"
-          type="text"
-          value={firstName}
-          placeholder="Digite seu nome..."
-          onChange={(event) => setFirstName(event.target.value)}
-          required
-          className="w-full rounded border-2 px-10 bg-white h-70 border-[#ffe46e] mb-10"
-          autoComplete="off"
-          aria-invalid={!!errors.firstName}
-          aria-describedby={errors.firstName ? "firstName-error" : undefined}
-        />
-        {errors.firstName && (
-          <p id="firstName-error" className="mt-1 text-sm text-red-600">
-            {errors.firstName}
-          </p>
-        )}
-      </div>
-
-      <div>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          inputMode="email"
-          autoComplete="off"
-          placeholder="Digite seu e-mail..."
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          required
-          className="w-full rounded border-2 px-10 bg-white h-70 border-[#ffe46e] mb-10"
-          aria-invalid={!!errors.email}
-          aria-describedby={errors.email ? "email-error" : undefined}
-        />
-        {errors.email && (
-          <p id="email-error" className="mt-1 text-sm text-red-600">
-            {errors.email}
-          </p>
-        )}
-      </div>
-
-      <button
-        type="submit"
-        disabled={submitting}
-        className="w-full rounded bg-[#ffe46e] pt-10 pb-10 text-[#1e1c16] disabled:opacity-50 text-[30px] font-redhatdisplay font-bold mb-10"
-      >
-        {submitting ? "Enviando…" : "QUERO CAMINHAR COM JESUS =)"}
-      </button>
-
-      <p className="text-[15px] font-bold text-grey opacity-50 mb-10">
-        Você pode se desinscrever a qualquer momento. Nós nunca enviaremos spam.
+    <>
+      <p className="text-[37px] text-center">
+        <strong>Inscreva-se</strong> gratuitamente
       </p>
+      <form
+        onSubmit={onSubmit}
+        className="max-w-620 text-bold font-redhatdisplay text-[25px]"
+      >
+        <div>
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            value={firstName}
+            placeholder="Digite seu nome..."
+            onChange={(event) => setFirstName(event.target.value)}
+            required
+            className="w-full rounded border-2 px-10 bg-white h-70 border-[#ffe46e] mb-10"
+            autoComplete="off"
+            aria-invalid={!!errors.firstName}
+            aria-describedby={errors.firstName ? "firstName-error" : undefined}
+          />
+          {errors.firstName && (
+            <p id="firstName-error" className="mt-1 text-sm text-red-600">
+              {errors.firstName}
+            </p>
+          )}
+        </div>
 
-      {message && (
-        <p className="w-full pt-10 pb-10 rounded bg-[#00bf63] text-white font-bold">
-          {message}
+        <div>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            inputMode="email"
+            autoComplete="off"
+            placeholder="Digite seu e-mail..."
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            required
+            className="w-full rounded border-2 px-10 bg-white h-70 border-[#ffe46e] mb-10"
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "email-error" : undefined}
+          />
+          {errors.email && (
+            <p id="email-error" className="mt-1 text-sm text-red-600">
+              {errors.email}
+            </p>
+          )}
+        </div>
+
+        <button
+          type="submit"
+          disabled={submitting}
+          className="w-full rounded bg-[#ffe46e] pt-10 pb-10 text-[#1e1c16] disabled:opacity-50 text-[30px] font-redhatdisplay font-bold mb-10"
+        >
+          {submitting ? "Enviando…" : "QUERO CAMINHAR COM JESUS =)"}
+        </button>
+
+        <p className="text-[15px] font-bold text-grey opacity-50 mb-10">
+          Você pode se desinscrever a qualquer momento. Nós nunca enviaremos
+          spam.
         </p>
-      )}
-    </form>
+
+        {message && (
+          <p className="w-full pt-10 pb-10 rounded bg-[#00bf63] text-white font-bold">
+            {message}
+          </p>
+        )}
+      </form>
+    </>
   );
 }
