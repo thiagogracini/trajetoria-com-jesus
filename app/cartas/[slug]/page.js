@@ -7,13 +7,14 @@ import MarkdownIt from "markdown-it";
 
 const md = new MarkdownIt();
 
-async function fetchCartas(carta) {
+async function fetchCartas(requestedPost) {
   const posts = getAllPosts();
-  return posts.find((post) => post.slug === carta);
+  return posts.find((post) => post.slug === requestedPost);
 }
 
-export default async function Carta({ params }) {
-  const carta = await fetchCartas(params.carta);
+export default async function Post({ params }) {
+  const { slug } = await params;
+  const carta = await fetchCartas(slug);
 
   if (!carta) notFound();
 
@@ -22,13 +23,15 @@ export default async function Carta({ params }) {
   return (
     <>
       <Hero />
-      <section className="pt-96 bg-[#FFFEFB]">
-        <ContainerGrid>
-          <article>
+      <section className="pt-96 bg-[#FFFEFB] pb-96">
+        <ContainerGrid className="laptop:flex laptop:justify-between">
+          <article className="m-auto laptop:m-0 mb-56 laptop:pr-15">
             <h1>{carta.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: htmlConverter }} />
           </article>
-          <SubscribeForm />
+          <div>
+            <SubscribeForm className="m-auto" />
+          </div>
         </ContainerGrid>
       </section>
     </>

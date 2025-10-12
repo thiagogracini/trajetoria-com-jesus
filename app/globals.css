@@ -14,7 +14,7 @@
 }
 
 .max-newsletter-w-grid {
-  @apply max-w-[40.25rem];
+  @apply max-w-[83.125rem];
 }
 
 body {
@@ -29,13 +29,12 @@ h3 {
 }
 
 article {
-  max-width: 46.875rem;
+  max-width: 37.5rem;
 }
 
 article h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
   padding-bottom: 24px;
 }
 
@@ -51,10 +50,10 @@ article h3 {
   padding-bottom: 16px;
 }
 
-p,
-ul {
+article p,
+article ul {
   padding-bottom: 16px;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 article ul li {

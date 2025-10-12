@@ -53,7 +53,9 @@ Esse foi o maior ensinamento de Jesus Cristo, no fim tudo se resume em **AMOR**
 
 Medite sobre isso…
 
-— Thiago Gracini
+Fique com Deus
+
+&nbsp;
 
 ---
 
