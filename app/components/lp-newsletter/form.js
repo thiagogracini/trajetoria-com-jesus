@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { useRouter } from "next/navigation";
 
 export default function SubscribeForm({ className, formHeadLine }) {
+  const router = useRouter();
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
-  const [message, setMessage] = useState(null);
 
   const validate = () => {
     const formErrors = {};
@@ -23,7 +24,6 @@ export default function SubscribeForm({ className, formHeadLine }) {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setMessage(null);
     if (!validate()) return;
 
     try {
@@ -35,10 +35,10 @@ export default function SubscribeForm({ className, formHeadLine }) {
       });
 
       // await new Promise((r) => setTimeout(r, 600));
-      setMessage("Inscrição enviada com sucesso!");
       setFirstName("");
       setEmail("");
       setErrors({});
+      router.push("/obrigado");
     } catch (error) {
       setMessage("Falha ao enviar. Tente novamente.");
     } finally {
@@ -112,11 +112,11 @@ export default function SubscribeForm({ className, formHeadLine }) {
           Você pode se desinscrever a qualquer momento
         </p>
 
-        {message && (
+        {/* {message && (
           <p className="w-full pt-10 pb-10 rounded bg-[#00bf63] text-center text-white font-bold">
             {message}
           </p>
-        )}
+        )} */}
       </form>
     </div>
   );
