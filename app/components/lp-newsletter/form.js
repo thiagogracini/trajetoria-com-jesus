@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-export default function SubscribeForm({ className }) {
+export default function SubscribeForm({ className, formHeadLine }) {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState({});
@@ -47,13 +47,13 @@ export default function SubscribeForm({ className }) {
   };
 
   const defaultClass =
-    "bg-white max-w-577 p-32 pt-56 pb-56 border-1 border-[#EAEAEA] shadow-md rounded-[1.25rem]";
+    "bg-white p-30 pt-24 pb-24 border-1 border-[#EAEAEA] shadow-md rounded-[1.25rem]";
   const combinedClasses = twMerge(defaultClass, className);
 
   return (
     <div className={combinedClasses}>
-      <p className="text-[24px] text-center mb-24">
-        <strong>Receba a carta diária</strong> no seu e-mail
+      <p className="text-[20px] max-w-212 laptop:max-w-320 text-center m-auto pb-24">
+        {formHeadLine}
       </p>
 
       <form onSubmit={onSubmit} className="max-w-620 font-alegreya">
@@ -66,7 +66,7 @@ export default function SubscribeForm({ className }) {
             placeholder="Digite seu nome..."
             onChange={(event) => setFirstName(event.target.value)}
             required
-            className="w-full  rounded text-2xl border-2 px-10 bg-white h-70 border-[#ffe46e] mb-10"
+            className="w-full  rounded text-[20px] border-2 px-10 bg-white h-48 border-[#ffe46e] mb-10"
             autoComplete="off"
             aria-invalid={!!errors.firstName}
             aria-describedby={errors.firstName ? "firstName-error" : undefined}
@@ -89,7 +89,7 @@ export default function SubscribeForm({ className }) {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
-            className="w-full text-2xl rounded border-2 px-10 bg-white h-70 border-[#ffe46e] mb-10"
+            className="w-full text-[20px] rounded border-2 px-10 bg-white h-48 border-[#ffe46e] mb-10"
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
           />
@@ -103,9 +103,9 @@ export default function SubscribeForm({ className }) {
         <button
           type="submit"
           disabled={submitting}
-          className="w-full rounded bg-[#ffe46e] p-20 rounded-md text-[#1e1c16] disabled:opacity-50 text-[16px] font-redhatdisplay font-bold mb-10"
+          className="w-full rounded bg-[#ffe46e] p-10 pr-26 pl-26 rounded-md text-[#1e1c16] disabled:opacity-50 text-[15px] font-redhatdisplay font-bold mb-10"
         >
-          {submitting ? "Enviando…" : "QUERO RECEBER A CARTA DIARIAMENTE =)"}
+          {submitting ? "Enviando…" : "Quero receber a carta diariamente =)"}
         </button>
 
         <p className="text-grey text-center text-[12px] opacity-50 mb-10">

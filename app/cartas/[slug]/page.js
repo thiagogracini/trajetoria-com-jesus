@@ -4,6 +4,7 @@ import SubscribeForm from "@components/lp-newsletter/form";
 import { getAllPosts } from "@lib/posts.js";
 import { notFound } from "next/navigation";
 import MarkdownIt from "markdown-it";
+import Footer from "@components/lp-newsletter/footer";
 
 const md = new MarkdownIt();
 
@@ -23,17 +24,25 @@ export default async function Post({ params }) {
   return (
     <>
       <Hero />
-      <section className="pt-96 bg-[#FFFEFB] pb-96">
+      <section className="pt-48 bg-[#FFFEFB] pb-48">
         <ContainerGrid className="laptop:flex laptop:justify-between">
           <article className="m-auto laptop:m-0 mb-56 laptop:pr-15">
             <h1>{carta.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: htmlConverter }} />
           </article>
           <div>
-            <SubscribeForm className="m-auto" />
+            <SubscribeForm
+              className="m-auto max-w-326"
+              formHeadLine={
+                <>
+                  <strong>Receba a carta diária</strong>
+                </>
+              }
+            />
           </div>
         </ContainerGrid>
       </section>
+      <Footer />
     </>
   );
 }
