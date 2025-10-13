@@ -38,7 +38,7 @@ export default function SubscribeForm({ className, formHeadLine }) {
       setFirstName("");
       setEmail("");
       setErrors({});
-      router.push("/obrigado");
+      router.push("/agradecimento");
     } catch (error) {
       setMessage("Falha ao enviar. Tente novamente.");
     } finally {
