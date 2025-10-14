@@ -64,6 +64,6 @@ Assim está escrito em **Hebreus 11:6**
 
 A fé é um ingrediente necessário em nossa vida. É de suma importância que se tenha fé, não apenas para crescer espiritualmente, mas para prosperar na vida como um todo.
 
-Se **Fé** é um assunto do seu interesse não perca o e-mail de amanhã.
+Se **Fé** é um assunto do seu interesse não perca o e-mail de amanhã —vou falar sobre **[por que precisamos de Deus para decidir?](/cartas/por-que-precisamos-de-deus-para-decidir)**
 
 Fique com Deus
