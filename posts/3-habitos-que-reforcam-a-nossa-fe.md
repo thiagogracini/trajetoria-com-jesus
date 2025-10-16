@@ -48,6 +48,8 @@ Esses são os principais hábitos que eu acredito que um Cristão deve ter, exis
 
 Construir um hábito não é fácil e leva tempo. Comece aos poucos e depois vá melhorando.
 
+Caso tenha interesse, leia o meu artigo sobre como **[Como construir um hábito cristão](/cartas/como-construir-um-habito-cristao)**
+
 Por hoje é isso, até amanhã!
 
 Fique com Deus
