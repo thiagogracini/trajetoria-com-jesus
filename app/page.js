@@ -36,7 +36,7 @@ function Home() {
 
         <section className="border border-[#3f352241] rounded-[1.25rem] bg-white m-auto mt-96 mb-48 max-w-577 p-24">
           <h2 className="text-center font-redhatdisplay text-[40px] font-bold">
-            Cartas Enviada
+            Cartas Enviadas
           </h2>
           {posts.map((post) => (
             <div key={post.letter}>
