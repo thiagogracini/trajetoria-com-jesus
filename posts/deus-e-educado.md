@@ -35,9 +35,9 @@ Não sei se você já passou por isso, mas experimente, quando estiver com algum
 
 Você vai se surpreender: de repente, as coisas começam a clarear na sua cabeça e você passa a entender aquilo que estava confuso.
 
-Como já aconteceu comigo por diversas vezes. Mas, às vezes, nós somos teimosos: demoramos para recorrer a Deus e nos esquecemos d’Ele.
+Como já aconteceu comigo por diversas vezes. Mas, às vezes, nós somos teimosos: demoramos para recorrer a Deus e nos esquecemos dele.
 
-## Deus é educado: se você quer ajuda d’Ele, precisa pedir
+## Deus é educado: se você quer ajuda dele, precisa pedir
 
 Imagine que você tem um amigo que está querendo te ajudar e tudo que você precisa fazer é pedir a ele. Mas você não pede: prefere sofrer, ir pelo caminho mais difícil do que recorrer ao seu amigo.
 
