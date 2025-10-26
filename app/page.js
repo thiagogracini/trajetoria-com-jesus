@@ -6,7 +6,7 @@ import { ContainerGrid } from "@components/lp-newsletter/container.js";
 
 function Home() {
   const posts = getAllPosts();
-  posts.sort((a, b) => a.letter - b.letter);
+  posts.sort((a, b) => b.letter - a.letter);
 
   return (
     <>
